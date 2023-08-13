@@ -7,7 +7,7 @@ This repository contains the following files:
 - [Merge Sort.c](./mergeSort.c)
 - [Quick Sort.c](./quickSort.c)
 ## Knapsack Algorithms :
-- [knapsack Greedy Method.c](./mergeSort.c)
+- [knapsack Greedy Method.c](./knapsac_Greedy_Method.c)
 ## Minimum Spanning Trees :
 - [Kruskals Algorithm](./Kruskals.c)
 - [prims Algorithm](./prims.c)
