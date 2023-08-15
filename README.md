@@ -13,6 +13,6 @@
 - [prims Algorithm](./prims.c)
 ### single source Shortest Path :
 - [Dijkstra](./dijkstra.c)
-### Minimum cost path :
+### Travelling Salesperson Problem:
 - [Travelling Sales Person : Brute Force Approach](./tsp_b.c)
 - [Travelling Sales Person : Dynamic Approach](./tsp_dynamic.c)
