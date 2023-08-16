@@ -2,20 +2,26 @@
 
 ## This repository contains the following files:
 
-### Searching Algorithms :
+### 1 Searching Algorithms :
 - [Bredth & Depth First Search Algorithm](./bfs_dfs.c)
-### Sorting Algorithms :
+
+### 2 Sorting Algorithms :
 - [Merge Sort.c](./mergeSort.c)
 - [Quick Sort.c](./quickSort.c)
-### Knapsack Algorithms :
+
+### 3. Knapsack Algorithms :
 - [knapsack Greedy Method.c](./knapsac_Greedy_Method.c)
-### Minimum Spanning Trees :
+
+### 4. Minimum Spanning Trees :
 - [Kruskals Algorithm](./Kruskals.c)
 - [prims Algorithm](./prims.c)
-### single source Shortest Path :
+
+### 4. single source Shortest Path :
 - [Dijkstra](./dijkstra.c)
-### All pairs shortest paths:
-- [Floyd's algorithm](./Floid.c)
-### Travelling Salesperson Problem:
+
+### 6. Travelling Salesperson Problem:
 - [Travelling Sales Person : Brute Force Approach](./tsp_b.c)
 - [Travelling Sales Person : Dynamic Approach](./tsp_dynamic.c)
+
+### 7. All pairs shortest paths:
+- [Floyd's algorithm](./Floid.c)
