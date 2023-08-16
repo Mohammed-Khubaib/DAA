@@ -2,10 +2,10 @@
 
 ## This repository contains the following files:
 
-### 1 Searching Algorithms :
+### 1. Searching Algorithms :
 - [Bredth & Depth First Search Algorithm](./bfs_dfs.c)
 
-### 2 Sorting Algorithms :
+### 2. Sorting Algorithms :
 - [Merge Sort.c](./mergeSort.c)
 - [Quick Sort.c](./quickSort.c)
 
@@ -25,3 +25,8 @@
 
 ### 7. All pairs shortest paths:
 - [Floyd's algorithm](./Floid.c)
+
+### 8. Back Tracking Algorithm :
+- [N Queen's problem](./N-Queens.c)
+- [Hamiltonian Cycle](./Hamiltonian.c)
+- [Graph Coloring](./graph_coloring.c)
