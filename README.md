@@ -1,6 +1,7 @@
 # Design and Analysis of Algorithms :
 
 ## This repository contains the following files:
+
 ### Searching Algorithms :
 - [Bredth & Depth First Search Algorithm](./bfs_dfs.c)
 ### Sorting Algorithms :
@@ -13,6 +14,8 @@
 - [prims Algorithm](./prims.c)
 ### single source Shortest Path :
 - [Dijkstra](./dijkstra.c)
+### All pairs shortest paths:
+- [Floyd's algorithm](./Floid.c)
 ### Travelling Salesperson Problem:
 - [Travelling Sales Person : Brute Force Approach](./tsp_b.c)
 - [Travelling Sales Person : Dynamic Approach](./tsp_dynamic.c)
