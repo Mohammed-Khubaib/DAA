@@ -8,12 +8,12 @@ int uni(int, int);
 
 int main()
 {
-    for (i = 0 ; i <9;i++){
-        printf("%d ",parent[i]);
-    }
-    printf("\n");
-    printf("Kruskal's algorithm in C\n");
-    printf("========================\n");
+    // for (i = 0 ; i <9;i++){
+        // printf("%d ",parent[i]);
+    // }
+    // printf("\n");
+    // printf("Kruskal's algorithm in C\n");
+    // printf("========================\n");
     printf("Enter the no. of vertices:\n");
     scanf("%d", &n);
 
@@ -27,7 +27,7 @@ int main()
                 cost[i][j] = 999;
         }
     }
-    printf("The edges of Minimum Cost Spanning Tree are\n");
+    printf("\nThe edges of Minimum Cost Spanning Tree are\n");
     while (ne < n)
     {
         for (i = 1, min = 999; i <= n; i++)
@@ -52,24 +52,24 @@ int main()
         }
         cost[a][b] = cost[b][a] = 999;
     }
-    for (int j = 1 ; j <=6;j++){
-        printf("%d ",parent[j]);
-    }
+    // for (int j = 1 ; j <=6;j++){
+        // printf("%d ",parent[j]);
+    // }
     printf("\nMinimum cost = %d\n", mincost);
     return 0;
 }
 
 int find(int i)
 {
-    printf("\n %d : \n",i);
-    for (int j = 1 ; j <=6;j++){
-        printf("%d ",parent[j]);
-    }
-    printf("\n");
+    // printf("\n %d : \n",i);
+    // for (int j = 1 ; j <=6;j++){
+        // printf("%d ",parent[j]);
+    // }
+    // printf("\n");
     while (parent[i]){
         i = parent[i];
     }
-    printf("\ni=%d\n",i);
+    // printf("\ni=%d\n",i);
     return i;
 }
 

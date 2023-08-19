@@ -1,41 +1,36 @@
 #include <stdio.h>
 #define INF 999
+#define N 6
 int main() {
-   int arr[4][4];
-   int cost[4][4] = {7,5,0,0,7,0,0,2,0,3,0,0,4,0,1,0};
-   int i , j , k , l , n = 4;
-   for(i = 0 ; i < n;i++){
-    for(j=0;j<n;j++){
-        if(cost[i][j]==0){
-            arr[i][j]=INF;
-        }
-        else{
-            arr[i][j] = cost[i][j];
-        }
-    }
-   }
-
+   int arr[N][N] = {INF,50,45,10,INF,INF,
+                    INF,INF,10,15,INF,INF,
+                    INF,INF,INF,INF,30,INF,
+                    10,INF,INF,INF,15,INF,
+                    INF,20,35,INF,INF,INF,
+                    INF,INF,INF,INF,3,INF};
+   int i , j , k , l ;
    printf("Adjacency Matrix of cost of edges : \n");
-   for(i=0;i<n;i++){
-    for(j=0;j<n;j++){
+   for(i=0;i<N;i++){
+    for(j=0;j<N;j++){
         printf("%d\t",arr[i][j]);
     }
     printf("\n");
    }
-   for(k=0;k<n;k++){
-    for ( i = 0; i < n; i++)
+   for(k=0;k<N;k++){
+    for ( i = 0; i < N; i++)
     {
-        for ( j = 0; j < n; j++)
+        for ( j = 0; j < N; j++)
         {
-            if(arr[i][j]>arr[i][k]+arr[k][j]){
+            if(arr[i][k]+arr[k][j]<arr[i][j]){
                 arr[i][j] = arr[i][k] + arr[k][j];
             }
         }
     }
    }
    printf("\n Adjecency Matrix of Lowest cost between the vertices :\n");
-   for(i=0;i<n;i++){
-    for(j=0;j<n;j++){
+
+   for(i=0;i<1;i++){
+    for(j=1;j<N;j++){
         printf("%d\t",arr[i][j]);
     }
     printf("\n");
@@ -44,14 +39,13 @@ int main() {
 }
 /*
 Adjacency Matrix of cost of edges : 
-7       5       999     999
-7       999     999     2
-999     3       999     999
-4       999     1       999
+INF,50,45,10,INF,INF,
+INF,INF,10,15,INF,INF,
+INF,INF,INF,INF,30,INF,
+10,INF,INF,INF,15,INF,
+INF,20,35,INF,INF,INF,
+INF,INF,INF,INF,3,INF
 
- Adjecency Matrix of Lowest cost between the vertices :
-7       5       8       7
-6       6       3       2
-9       3       6       5
-4       4       1       6
+Adjecency Matrix of Lowest cost between the vertices :
+45      45      10      25      999
 */

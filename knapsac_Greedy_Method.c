@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct Item {
+typedef struct {
     int value;
     int weight;
-};
+}Item;
 
-double fractionalKnapsack(int capacity, struct Item items[], int n) {
+double fractionalKnapsack(int capacity, Item items[], int n) {
     double totalValue = 0.0;
     int currentWeight = 0;
 
@@ -15,11 +15,12 @@ double fractionalKnapsack(int capacity, struct Item items[], int n) {
             double ratioI = (double)items[i].value / items[i].weight;
             double ratioJ = (double)items[j].value / items[j].weight;
             if (ratioI < ratioJ) {
-                struct Item temp = items[i];
+                Item temp = items[i];
                 items[i] = items[j];
                 items[j] = temp;
             }
         }
+        printf("{%d,%d} ",items[i].value ,items[i].weight);
 
         if (currentWeight + items[i].weight <= capacity) {
             totalValue += items[i].value;
@@ -36,8 +37,8 @@ double fractionalKnapsack(int capacity, struct Item items[], int n) {
 
 int main() {
     int capacity = 15;
-    // struct Item items[] = {{10, 2}, {5, 3}, {15, 5}, {7, 7}, {6, 1}, {18, 4}, {3, 1}};
-    struct Item items[] = {{5, 1}, {10,3}, {15, 5},{7,4} ,{8,1},{9,3},{4,2}};
+    Item items[] = {{10, 2}, {5, 3}, {15, 5}, {7, 7}, {6, 1}, {18, 4}, {3, 1}};
+    // Item items[] = {{5, 1}, {10,3}, {15, 5},{7,4} ,{8,1},{9,3},{4,2}};
 
     
     int n = sizeof(items) / sizeof(items[0]);

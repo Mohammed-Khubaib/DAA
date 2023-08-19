@@ -36,12 +36,12 @@ int main()
                     }
             }
         }
-        printf("\nvisisted array status : \n");
-        for (int k = 1; k <= n; k++)
-        {
-            printf("%d ", visited[k]);
-        }
-        printf("\n");
+        // printf("\nvisisted array status : \n");
+        // for (int k = 1; k <= n; k++)
+        // {
+        //     printf("%d ", visited[k]);
+        // }
+        // printf("\n");
         if (visited[u] == 0 || visited[v] == 0)
         {
             printf("\n Edge %d:(%d %d) cost:%d", ne++, a, b, min);
@@ -50,11 +50,11 @@ int main()
         }
         cost[a][b] = cost[b][a] = 999;
     }
-    printf("\n");
-    for (int k = 1; k <= n; k++)
-    {
-        printf("%d ", visited[k]);
-    }
+    // printf("\n");
+    // for (int k = 1; k <= n; k++)
+    // {
+    //     printf("%d ", visited[k]);
+    // }
     printf("\n");
     printf("\n Minimun cost=%d", mincost);
     return 0;
